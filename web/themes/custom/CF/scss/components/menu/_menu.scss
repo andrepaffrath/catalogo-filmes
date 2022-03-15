@@ -1,0 +1,23 @@
+.menu{
+
+    li{
+        a{color: red};
+    }
+}
+
+.navbar-default{
+    .navbar-nav{
+         li{
+            margin-left: 30px;
+            &.is-active{
+                border-bottom: 1px solid red;    
+            }
+
+            a{color: #000};
+            
+            
+        }
+
+    }
+
+}   

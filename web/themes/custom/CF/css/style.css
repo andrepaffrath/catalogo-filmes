@@ -5782,5 +5782,18 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.menu li a {
+  color: red; }
+
+.navbar-default .navbar-nav li {
+  margin-left: 30px; }
+  .navbar-default .navbar-nav li.is-active {
+    border-bottom: 1px solid red; }
+  .navbar-default .navbar-nav li a {
+    color: #000; }
+
+.navbar-header .logo img {
+  max-width: 50px;
+  max-height: auto; }
 
 /*# sourceMappingURL=style.css.map */
