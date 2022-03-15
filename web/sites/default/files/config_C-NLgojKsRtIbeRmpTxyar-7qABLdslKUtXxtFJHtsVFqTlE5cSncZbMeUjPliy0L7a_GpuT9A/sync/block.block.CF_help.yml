@@ -1,0 +1,22 @@
+uuid: 0e9fe63b-d18e-4992-89c2-ee8719f0a391
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - CF
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: CF_help
+theme: CF
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  label_display: '0'
+  provider: help
+visibility: {  }
