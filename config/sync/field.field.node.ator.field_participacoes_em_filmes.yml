@@ -1,0 +1,19 @@
+uuid: bda99736-2bff-48d1-b90a-4376b311c55b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participacoes_em_filmes
+    - node.type.ator
+id: node.ator.field_participacoes_em_filmes
+field_name: field_participacoes_em_filmes
+entity_type: node
+bundle: ator
+label: 'Participações em filmes'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

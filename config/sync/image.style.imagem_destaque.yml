@@ -1,0 +1,23 @@
+uuid: 28b9be57-ca5c-4505-8e97-5ea33e1936f6
+langcode: pt-br
+status: true
+dependencies: {  }
+name: imagem_destaque
+label: 'Imagem destaque'
+effects:
+  6f80227c-2457-4c80-9ba5-66d0d1b8d39f:
+    uuid: 6f80227c-2457-4c80-9ba5-66d0d1b8d39f
+    id: image_scale
+    weight: 1
+    data:
+      width: 299
+      height: null
+      upscale: false
+  6c1a27f5-8d1b-43a4-a2d9-4751b8edfcf9:
+    uuid: 6c1a27f5-8d1b-43a4-a2d9-4751b8edfcf9
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 299
+      height: 168
+      anchor: center-center

@@ -1,0 +1,278 @@
+uuid: b8700481-7576-4e21-86dd-9b12fdb25b77
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.ator.field_biografia
+    - field.field.node.ator.field_foto
+    - field.field.node.ator.field_imagem_destaque
+    - field.field.node.ator.field_nome
+    - field.field.node.ator.field_participacoes_em_filmes
+    - field.field.node.ator.field_resumo_biografia
+    - node.type.ator
+  module:
+    - ds
+    - field_group
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_card_principal
+        - field_foto
+        - group_card_corpo
+        - field_nome
+        - group_coluna_principal
+        - field_biografia
+        - group_coluna_corpo
+        - field_participacoes_em_filmes
+        - group_linha_principal
+  field_group:
+    group_card_principal:
+      children:
+        - group_linha_principal
+      label: 'Card Principal'
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'card mb-3'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_coluna_principal:
+      children:
+        - field_foto
+      label: 'Coluna principal'
+      parent_name: group_linha_principal
+      region: ds_content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: col-md-4
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_linha_principal:
+      children:
+        - group_coluna_principal
+        - group_coluna_corpo
+      label: 'Linha Principal'
+      parent_name: group_card_principal
+      region: ds_content
+      weight: 10
+      format_type: html_element
+      format_settings:
+        classes: 'row g-0'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_coluna_corpo:
+      children:
+        - group_card_corpo
+      label: 'Coluna Corpo'
+      parent_name: group_linha_principal
+      region: ds_content
+      weight: 7
+      format_type: html_element
+      format_settings:
+        classes: col-md-8
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_corpo:
+      children:
+        - field_nome
+        - field_biografia
+        - field_participacoes_em_filmes
+      label: 'Card Corpo'
+      parent_name: group_coluna_corpo
+      region: ds_content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: card-body
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.ator.full
+targetEntityType: node
+bundle: ator
+mode: full
+content:
+  field_biografia:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: p
+            fi-cl: card-text
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 6
+    region: ds_content
+  field_foto:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+  field_nome:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: h1
+            fi-cl: 'card-title my-3'
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 5
+    region: ds_content
+  field_participacoes_em_filmes:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: p
+            fi-cl: card-text
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 7
+    region: ds_content
+hidden:
+  field_imagem_destaque: true
+  field_resumo_biografia: true
+  langcode: true
+  links: true

@@ -1,0 +1,19 @@
+uuid: 96e267cd-0023-498c-a682-ffbdd82ed472
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resumo_biografia
+    - node.type.ator
+id: node.ator.field_resumo_biografia
+field_name: field_resumo_biografia
+entity_type: node
+bundle: ator
+label: 'Resumo Biografia'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

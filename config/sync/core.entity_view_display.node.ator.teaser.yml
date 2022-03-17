@@ -1,0 +1,33 @@
+uuid: 9bec31ba-e0bf-4bfb-b98d-4ab3b5228624
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ator.field_biografia
+    - field.field.node.ator.field_foto
+    - field.field.node.ator.field_imagem_destaque
+    - field.field.node.ator.field_nome
+    - field.field.node.ator.field_participacoes_em_filmes
+    - field.field.node.ator.field_resumo_biografia
+    - node.type.ator
+  module:
+    - user
+id: node.ator.teaser
+targetEntityType: node
+bundle: ator
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_biografia: true
+  field_foto: true
+  field_imagem_destaque: true
+  field_nome: true
+  field_participacoes_em_filmes: true
+  field_resumo_biografia: true
+  langcode: true

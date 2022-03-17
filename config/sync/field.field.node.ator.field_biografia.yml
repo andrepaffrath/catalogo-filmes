@@ -1,0 +1,21 @@
+uuid: 2d2f5b5d-8acf-4ccb-bea4-3b235aed33fe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biografia
+    - node.type.ator
+  module:
+    - text
+id: node.ator.field_biografia
+field_name: field_biografia
+entity_type: node
+bundle: ator
+label: Biografia
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

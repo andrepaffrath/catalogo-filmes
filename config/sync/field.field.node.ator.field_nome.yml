@@ -1,0 +1,19 @@
+uuid: 63bf764f-7623-4f17-9bfb-2168d39e578b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nome
+    - node.type.ator
+id: node.ator.field_nome
+field_name: field_nome
+entity_type: node
+bundle: ator
+label: Nome
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

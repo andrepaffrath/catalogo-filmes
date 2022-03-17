@@ -1,11 +1,11 @@
-uuid: 82a2dd35-0f58-4374-803a-8fcbf1f8d5f2
+uuid: 96cd0dcb-eb4d-450f-aab4-5a3391c8ed64
 langcode: pt-br
 status: true
 dependencies:
   module:
     - node
-id: node.field_nome_ator
-field_name: field_nome_ator
+id: node.field_participacoes_em_filmes
+field_name: field_participacoes_em_filmes
 entity_type: node
 type: string
 settings:
@@ -14,7 +14,7 @@ settings:
   is_ascii: false
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

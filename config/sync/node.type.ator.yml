@@ -1,4 +1,4 @@
-uuid: 11e56183-b1d2-4942-a60f-9a34f8077344
+uuid: 44f8086b-a637-44d6-b94e-c1d12bac8110
 langcode: pt-br
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Atores
-type: atores
-description: 'Página de Atores'
+name: Ator
+type: ator
+description: ''
 help: ''
 new_revision: true
 preview_mode: 0

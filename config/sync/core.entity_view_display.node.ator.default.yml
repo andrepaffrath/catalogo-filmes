@@ -1,0 +1,197 @@
+uuid: 58f0180e-5055-4be5-93a6-212db9bfd69a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.ator.field_biografia
+    - field.field.node.ator.field_foto
+    - field.field.node.ator.field_imagem_destaque
+    - field.field.node.ator.field_nome
+    - field.field.node.ator.field_participacoes_em_filmes
+    - field.field.node.ator.field_resumo_biografia
+    - node.type.ator
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e6b8e3c3-a4af-44cf-9345-a2c4568c2842:
+            uuid: e6b8e3c3-a4af-44cf-9345-a2c4568c2842
+            region: content
+            configuration:
+              id: 'extra_field_block:node:ator:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          f28e75c1-d1be-4014-b268-e0cb46e9379a:
+            uuid: f28e75c1-d1be-4014-b268-e0cb46e9379a
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_nome'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4c21dfd1-04e6-4d41-9c68-8bf8ac4b20e4:
+            uuid: 4c21dfd1-04e6-4d41-9c68-8bf8ac4b20e4
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_foto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ba340f24-6f75-4f67-b3d9-a8da977902eb:
+            uuid: ba340f24-6f75-4f67-b3d9-a8da977902eb
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_biografia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          cc25e929-995c-42e5-9df6-6112a808e502:
+            uuid: cc25e929-995c-42e5-9df6-6112a808e502
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_participacoes_em_filmes'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          6ef5aaf7-e578-4486-a598-6b4c2eaf8f4d:
+            uuid: 6ef5aaf7-e578-4486-a598-6b4c2eaf8f4d
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_resumo_biografia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          8079c028-a594-447b-818c-004de6f46ba3:
+            uuid: 8079c028-a594-447b-818c-004de6f46ba3
+            region: content
+            configuration:
+              id: 'field_block:node:ator:field_imagem_destaque'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.ator.default
+targetEntityType: node
+bundle: ator
+mode: default
+content:
+  field_biografia:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_foto:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_imagem_destaque:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_nome:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_participacoes_em_filmes:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_resumo_biografia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

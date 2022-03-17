@@ -1,11 +1,11 @@
-uuid: 00c37ed5-6758-44de-8c87-04c2265b061a
+uuid: 97043678-1475-45b7-9a73-0b51675d25c5
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - node.type.atores
-id: node.atores
+    - node.type.ator
+id: node.ator
 target_entity_type_id: node
-target_bundle: atores
+target_bundle: ator
 default_langcode: site_default
 language_alterable: false

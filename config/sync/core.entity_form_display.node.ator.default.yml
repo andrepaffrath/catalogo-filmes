@@ -1,38 +1,74 @@
-uuid: 52bcf824-c3d1-4d66-b2c6-3bf806edd06c
+uuid: 578cefff-1a5c-4216-b93d-059d580b483c
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - field.field.node.atores.body
-    - field.field.node.atores.field_nome_ator
-    - node.type.atores
+    - field.field.node.ator.field_biografia
+    - field.field.node.ator.field_foto
+    - field.field.node.ator.field_imagem_destaque
+    - field.field.node.ator.field_nome
+    - field.field.node.ator.field_participacoes_em_filmes
+    - field.field.node.ator.field_resumo_biografia
+    - image.style.thumbnail
+    - node.type.ator
   module:
+    - image
     - path
     - text
-id: node.atores.default
+id: node.ator.default
 targetEntityType: node
-bundle: atores
+bundle: ator
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_nome_ator:
-    type: string_textfield
+  field_biografia:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_foto:
+    type: image_image
     weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_imagem_destaque:
+    type: image_image
+    weight: 126
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_nome:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_participacoes_em_filmes:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_resumo_biografia:
+    type: string_textfield
+    weight: 125
     region: content
     settings:
       size: 60
