@@ -1,0 +1,23 @@
+uuid: 88b8a70f-6ca1-41d5-9ddd-c75351d9bdb8
+langcode: pt-br
+status: true
+dependencies: {  }
+name: full_screen
+label: 'Full Screen'
+effects:
+  0d056fc1-2414-4178-9643-05ef3d5d4092:
+    uuid: 0d056fc1-2414-4178-9643-05ef3d5d4092
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
+  dbe1bab2-d4d9-4fe7-ba07-13023efc0bbc:
+    uuid: dbe1bab2-d4d9-4fe7-ba07-13023efc0bbc
+    id: image_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

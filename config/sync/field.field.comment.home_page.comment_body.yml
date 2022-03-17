@@ -1,0 +1,21 @@
+uuid: 26016c1a-36cd-451b-8a5a-f7d267618ec4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.home_page
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.home_page.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: home_page
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

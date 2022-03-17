@@ -1,0 +1,28 @@
+uuid: 867d2940-ae1e-41eb-a84e-eefa7e3e68e8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.home_page
+    - field.field.comment.home_page.comment_body
+  module:
+    - text
+id: comment.home_page.default
+targetEntityType: comment
+bundle: home_page
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

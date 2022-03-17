@@ -1,0 +1,23 @@
+uuid: 80313c70-8de3-403c-8236-a195de31a6a2
+langcode: pt-br
+status: true
+dependencies: {  }
+name: banner
+label: Banner
+effects:
+  253ac611-8873-4fd2-9368-be4d052876d6:
+    uuid: 253ac611-8873-4fd2-9368-be4d052876d6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
+  70ed0bd5-2102-41da-a77e-27643cfe2f91:
+    uuid: 70ed0bd5-2102-41da-a77e-27643cfe2f91
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 350
+      anchor: center-center

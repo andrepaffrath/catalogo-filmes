@@ -1,0 +1,247 @@
+uuid: f551153b-3ae9-44c8-b910-9d7696d9749f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.filmes.body
+    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_descricao_curta
+    - field.field.node.filmes.field_imagem_destaque
+    - field.field.node.filmes.field_poster
+    - field.field.node.filmes.field_sinopse
+    - field.field.node.filmes.field_titulo
+    - node.type.filmes
+  module:
+    - field_group
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          134ef61f-e5c5-4009-b640-1707a1e04ffa:
+            uuid: 134ef61f-e5c5-4009-b640-1707a1e04ffa
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          23f60ea4-2bb4-4044-96fc-270e383361cb:
+            uuid: 23f60ea4-2bb4-4044-96fc-270e383361cb
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_titulo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          42a19b0f-e9d1-4d62-8ac0-97d20d6795db:
+            uuid: 42a19b0f-e9d1-4d62-8ac0-97d20d6795db
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_descricao_curta'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          840a75b5-a5c9-4cf9-a227-4887d012aea6:
+            uuid: 840a75b5-a5c9-4cf9-a227-4887d012aea6
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_imagem_destaque'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          100859b9-61d4-4bef-a2ed-1c937ef17efd:
+            uuid: 100859b9-61d4-4bef-a2ed-1c937ef17efd
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_poster'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          27c9b17c-acd1-43e8-90ca-5d56d0bc1e1d:
+            uuid: 27c9b17c-acd1-43e8-90ca-5d56d0bc1e1d
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_sinopse'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          e818f15d-5216-4520-ba81-0778742f91ee:
+            uuid: e818f15d-5216-4520-ba81-0778742f91ee
+            region: content
+            configuration:
+              id: 'field_block:node:filmes:field_atores'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+  field_group:
+    group_card:
+      children:
+        - field_imagem_destaque
+        - group_card_img_overlay
+      label: card
+      parent_name: ''
+      region: hidden
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: card
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_card_img_overlay:
+      children:
+        - field_titulo
+      label: 'card img overlay'
+      parent_name: group_card
+      region: hidden
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: card-img-overlay
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.filmes.default
+targetEntityType: node
+bundle: filmes
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_atores:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_descricao_curta:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagem_destaque:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_poster:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_sinopse:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_titulo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

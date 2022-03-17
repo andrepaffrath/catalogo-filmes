@@ -1,0 +1,21 @@
+uuid: 7135fabe-56eb-4aaa-bace-49bacf897098
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_descricao
+  module:
+    - text
+id: block_content.card.field_descricao
+field_name: field_descricao
+entity_type: block_content
+bundle: card
+label: Descrição
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

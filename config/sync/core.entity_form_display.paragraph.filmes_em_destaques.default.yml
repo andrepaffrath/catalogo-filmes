@@ -1,0 +1,54 @@
+uuid: a4ac771c-3055-4f22-ab7b-f76fed1bf77b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filmes_em_destaques.field_imagem_da_pagina
+    - field.field.paragraph.filmes_em_destaques.field_link
+    - field.field.paragraph.filmes_em_destaques.field_sub_titulo
+    - field.field.paragraph.filmes_em_destaques.field_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.filmes_em_destaques
+  module:
+    - image
+    - link
+id: paragraph.filmes_em_destaques.default
+targetEntityType: paragraph
+bundle: filmes_em_destaques
+mode: default
+content:
+  field_imagem_da_pagina:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sub_titulo:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

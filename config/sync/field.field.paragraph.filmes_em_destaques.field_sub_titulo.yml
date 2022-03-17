@@ -1,0 +1,19 @@
+uuid: 0433c633-e2cc-4d9d-ae17-6c782c811d50
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_titulo
+    - paragraphs.paragraphs_type.filmes_em_destaques
+id: paragraph.filmes_em_destaques.field_sub_titulo
+field_name: field_sub_titulo
+entity_type: paragraph
+bundle: filmes_em_destaques
+label: 'Sub Título'
+description: 'Sub Título da seção'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

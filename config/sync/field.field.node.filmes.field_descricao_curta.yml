@@ -1,0 +1,19 @@
+uuid: db62c08b-2dfb-4614-a61d-0501ed143c50
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao_curta
+    - node.type.filmes
+id: node.filmes.field_descricao_curta
+field_name: field_descricao_curta
+entity_type: node
+bundle: filmes
+label: 'Descrição curta'
+description: 'Descrição para a chamado do filme'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

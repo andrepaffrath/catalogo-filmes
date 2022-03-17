@@ -1,0 +1,43 @@
+uuid: b02234fc-fae5-4c2a-ae7b-24459e970f50
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.filmes.body
+    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_descricao_curta
+    - field.field.node.filmes.field_imagem_destaque
+    - field.field.node.filmes.field_poster
+    - field.field.node.filmes.field_sinopse
+    - field.field.node.filmes.field_titulo
+    - node.type.filmes
+  module:
+    - text
+    - user
+id: node.filmes.teaser
+targetEntityType: node
+bundle: filmes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_atores: true
+  field_descricao_curta: true
+  field_imagem_destaque: true
+  field_poster: true
+  field_sinopse: true
+  field_titulo: true
+  langcode: true

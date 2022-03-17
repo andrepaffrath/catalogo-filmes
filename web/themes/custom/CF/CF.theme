@@ -6,3 +6,29 @@
  *
  * Place your custom PHP code in this file.
  */
+function CF_preprocess_field(&$variables)
+{
+   
+
+    if (!empty($variables['field_name']))
+    {
+        switch ($variables['field_name']) {
+            case 'field_titulo':
+                $variables['CF'] =
+                [
+                'title' => $variables['items'][0]['content'],
+                'subtitle' => 'Teste subtitle'
+                ];
+            case 'field_categorias':
+
+            case 'field_sub_titulo':
+
+            break;
+        }
+  }
+
+    
+
+            
+    
+}

@@ -1,0 +1,23 @@
+uuid: 5ef6a1ed-4114-4c71-926c-2e2e21cc14a6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.atores
+  module:
+    - text
+id: node.atores.body
+field_name: body
+entity_type: node
+bundle: atores
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

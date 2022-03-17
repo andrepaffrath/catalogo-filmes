@@ -1,0 +1,22 @@
+uuid: f2012091-ca6d-419b-98ce-12169d7ebb37
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.filmes
+id: node.filmes.promote
+field_name: promote
+entity_type: node
+bundle: filmes
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: f5e21fc4-b76c-4487-8bd7-75c4b78e2809
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.filmes
+  module:
+    - text
+id: node.filmes.body
+field_name: body
+entity_type: node
+bundle: filmes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

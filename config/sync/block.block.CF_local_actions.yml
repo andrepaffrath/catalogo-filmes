@@ -1,6 +1,6 @@
 uuid: 3a7e449b-64af-42f4-85a2-23be1f1425d4
 langcode: pt-br
-status: true
+status: false
 dependencies:
   theme:
     - CF

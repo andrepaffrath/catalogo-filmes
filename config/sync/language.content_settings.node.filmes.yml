@@ -1,0 +1,11 @@
+uuid: 6e9884ca-13ab-4259-8a3b-a2223237804c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.filmes
+id: node.filmes
+target_entity_type_id: node
+target_bundle: filmes
+default_langcode: site_default
+language_alterable: false

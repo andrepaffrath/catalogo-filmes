@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'fd1dc550f6f243358650b914fb362b8ce9291c8f',
+        'reference' => '34b4f04a922c5e2218fa324724f69312dfd93175',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -239,6 +239,24 @@
             'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap',
             'aliases' => array(),
             'reference' => '8.x-3.23',
+            'dev_requirement' => false,
+        ),
+        'drupal/bootstrap5' => array(
+            'pretty_version' => '1.1.3',
+            'version' => '1.1.3.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap5',
+            'aliases' => array(),
+            'reference' => '1.1.3',
+            'dev_requirement' => false,
+        ),
+        'drupal/bootstrap_layouts' => array(
+            'pretty_version' => '5.2.0',
+            'version' => '5.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/bootstrap_layouts',
+            'aliases' => array(),
+            'reference' => '8.x-5.2',
             'dev_requirement' => false,
         ),
         'drupal/breakpoint' => array(
@@ -523,6 +541,15 @@
                 0 => '9.3.7',
             ),
         ),
+        'drupal/ds' => array(
+            'pretty_version' => '3.13.0',
+            'version' => '3.13.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ds',
+            'aliases' => array(),
+            'reference' => '8.x-3.13',
+            'dev_requirement' => false,
+        ),
         'drupal/dynamic_page_cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -541,11 +568,29 @@
                 0 => '9.3.7',
             ),
         ),
+        'drupal/entity_reference_revisions' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/entity_reference_revisions',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
         'drupal/field' => array(
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '9.3.7',
             ),
+        ),
+        'drupal/field_group' => array(
+            'pretty_version' => '3.2.0',
+            'version' => '3.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/field_group',
+            'aliases' => array(),
+            'reference' => '8.x-3.2',
+            'dev_requirement' => false,
         ),
         'drupal/field_layout' => array(
             'dev_requirement' => false,
@@ -727,6 +772,15 @@
                 0 => '9.3.7',
             ),
         ),
+        'drupal/paragraphs' => array(
+            'pretty_version' => '1.13.0',
+            'version' => '1.13.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/paragraphs',
+            'aliases' => array(),
+            'reference' => '8.x-1.13',
+            'dev_requirement' => false,
+        ),
         'drupal/path' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -757,7 +811,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'fd1dc550f6f243358650b914fb362b8ce9291c8f',
+            'reference' => '34b4f04a922c5e2218fa324724f69312dfd93175',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -885,6 +939,15 @@
             'replaced' => array(
                 0 => '9.3.7',
             ),
+        ),
+        'drupal/views_bootstrap' => array(
+            'pretty_version' => '4.3.0',
+            'version' => '4.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/views_bootstrap',
+            'aliases' => array(),
+            'reference' => '8.x-4.3',
+            'dev_requirement' => false,
         ),
         'drupal/views_ui' => array(
             'dev_requirement' => false,
@@ -1093,8 +1156,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher-implementation' => array(

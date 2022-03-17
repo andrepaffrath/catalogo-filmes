@@ -4,10 +4,38 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - body
+        - links
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
@@ -20,10 +48,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
-    region: content
+    weight: 0
+    region: main
   links:
-    weight: 101
-    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: main
 hidden:
   langcode: true
+  layout_builder__layout: true

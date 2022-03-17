@@ -1,0 +1,8 @@
+uuid: 80e5b880-a6ac-4b6d-96a3-4d4941e5da38
+langcode: pt-br
+status: true
+dependencies: {  }
+id: home_page
+label: 'Home page'
+target_entity_type_id: block_content
+description: ''

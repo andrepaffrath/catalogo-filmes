@@ -1,0 +1,11 @@
+uuid: 28b9b916-346e-4f0a-808b-b3747ab6c3aa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+id: block_content.card
+target_entity_type_id: block_content
+target_bundle: card
+default_langcode: site_default
+language_alterable: false
