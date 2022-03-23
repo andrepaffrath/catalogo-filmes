@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.filmes.body
-    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_atores_1
     - field.field.node.filmes.field_descricao_curta
     - field.field.node.filmes.field_imagem_destaque
     - field.field.node.filmes.field_poster
@@ -50,6 +50,8 @@ third_party_settings:
         - group_card_content_body
         - body
         - field_atores
+        - field_ator
+        - field_atores_1
         - field_titulo
         - field_sinopse
   field_group:
@@ -116,6 +118,8 @@ third_party_settings:
       children:
         - body
         - field_atores
+        - field_ator
+        - field_atores_1
       label: card-content-body
       parent_name: group_card_body
       region: ds_content
@@ -144,13 +148,21 @@ content:
     third_party_settings: {  }
     weight: 4
     region: ds_content
-  field_atores:
-    type: string
+  field_atores_1:
+    type: entity_reference_entity_view
     label: above
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 5
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 7
     region: ds_content
   field_poster:
     type: image

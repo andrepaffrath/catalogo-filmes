@@ -65,4 +65,5 @@ theme:
   stable: 0
   classy: 0
   bootstrap5: 0
+  b5subtheme: 0
 profile: standard

@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.filmes.body
-    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_atores_1
     - field.field.node.filmes.field_descricao_curta
     - field.field.node.filmes.field_imagem_destaque
     - field.field.node.filmes.field_poster
@@ -34,7 +34,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_atores: true
+  field_atores_1: true
   field_descricao_curta: true
   field_imagem_destaque: true
   field_poster: true

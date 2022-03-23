@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.filmes.body
-    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_atores_1
     - field.field.node.filmes.field_descricao_curta
     - field.field.node.filmes.field_imagem_destaque
     - field.field.node.filmes.field_poster
@@ -124,21 +124,21 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          e818f15d-5216-4520-ba81-0778742f91ee:
-            uuid: e818f15d-5216-4520-ba81-0778742f91ee
+          49a82f8b-6da0-45c2-a2ce-a28e0621de83:
+            uuid: 49a82f8b-6da0-45c2-a2ce-a28e0621de83
             region: content
             configuration:
-              id: 'field_block:node:filmes:field_atores'
+              id: 'field_block:node:filmes:field_atores_1'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
               formatter:
-                type: string
+                type: entity_reference_label
                 label: above
                 settings:
-                  link_to_entity: false
+                  link: true
                 third_party_settings: {  }
-            weight: 7
+            weight: 9
             additional: {  }
         third_party_settings: {  }
   field_group:
@@ -193,13 +193,13 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_atores:
-    type: string
+  field_atores_1:
+    type: entity_reference_label
     label: above
     settings:
-      link_to_entity: false
+      link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 10
     region: content
   field_descricao_curta:
     type: string

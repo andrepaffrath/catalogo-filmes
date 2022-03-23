@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.filmes.body
-    - field.field.node.filmes.field_atores
+    - field.field.node.filmes.field_atores_1
     - field.field.node.filmes.field_descricao_curta
     - field.field.node.filmes.field_imagem_destaque
     - field.field.node.filmes.field_poster
@@ -37,11 +37,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_atores:
-    type: string_textfield
-    weight: 128
+  field_atores_1:
+    type: entity_reference_autocomplete
+    weight: 130
     region: content
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

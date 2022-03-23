@@ -1,0 +1,20 @@
+uuid: d046c4a0-5aa7-4c50-b7e2-8e6b8d57240a
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - b5subtheme
+_core:
+  default_config_hash: CTIl2YfuH-oGtxHw-nmyJaFfBEntQNtjSbXfkLVe-M4
+id: b5subtheme_local_actions
+theme: b5subtheme
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

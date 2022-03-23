@@ -1,0 +1,25 @@
+{# @todo: add more control to images and positoning #}
+
+<div {{ attributes.addClass(classes) }} id="{{ id }}">
+    {% for key, row in rows -%}
+    <div class="card py-3 px-3 my-3" >
+        <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+                {% if row.image %}
+                    {{ row.image }}
+                {% endif %}
+            </div>   
+            <div class="flex-grow-1 ms-3">
+                {% if row.heading %}
+                    <h3>{{ row.heading }}</h3>
+                {% endif %}
+                <br/>
+                {% if row.body %}
+                    <p>{{ row.body }}</p>
+                {% endif %}
+            
+            </div>
+        </div>
+    </div>
+    {%- endfor %}
+</div>
